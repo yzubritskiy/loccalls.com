@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+	<name>Local Calls</name>
+	<author>Yuriy Zubritskiy</author>
+	<creationDate>2016/09/12</creationDate>
+	<copyright>Copyright (C) 2016. All rigth reserved</copyright>
+	<license>Payment</license>
+	<authorEmail>yuriy.zubritskiy@loccalls.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.0</version>
+	<description>Local Calls - Choose your own mobile tariff</description>
+	<files>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename module="mod_loccalls">mod_loccalls.php</filename>
+	</files>
+	<languages>
+		<language tag="ru-RU">ru-RU.mod_loccalls.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="count" type="text" default="10" label="MOD_LOCCALLS_COUNT_LABEL" description="MOD_LOCCALLS_COUNT_DESCRIPTION" />
+				<field name="img" type="radio" label="MOD_LOCCALLS_IMG_LABEL" description="MOD_LOCCALLS_IMG_DESCRIPTION">
+					<option value="1">JYES</option>
+					<option value="2">JNO</option>
+				</field>			
+			</fieldset>
+		</fields>
+	</config>
+</extension>
